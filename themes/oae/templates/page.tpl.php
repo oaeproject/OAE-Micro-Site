@@ -109,8 +109,8 @@
     <?php if (($site_name || $site_slogan) && $header): ?>
 
       <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
-          <div style="position: absolute; width: 190px; margin-top: 30px; margin-left: 870px;">
-            <div style="color: #C0F4FF; word-spacing: normal; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana;">Featured widget</div>
+          <div style="position: absolute; width: 190px; margin-top: 10px; margin-left: 835px;">
+            <div style="color: #C0F4FF; word-spacing: normal; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; margin-left: 15px;margin-bottom: 12px;">Featured widget</div>
             <div>
               <img alt="Calendar Feed" src="/drupal/images/calendar-feed-widget-icon.png" style="float: right; border-radius: 5px 5px 5px 5px; height: 40px; width: 40px; margin: 7px 15px;">
               <div style="background-color: #fff; border-radius: 5px 5px 5px 5px; box-shadow: 0px 0px 3px 1px rgb(85, 85, 85); margin-top: 9px; padding: 10px 10px 10px 15px;">
@@ -121,19 +121,19 @@
         </div>
         <div id="header-menu" style="float:right;width:758px;">
             <a href="enable-collaboration" title="Enable collaboration" id="header-menu-1" style="float: left; margin-top: 230px; margin-left: 20px;">
-                <img src="/drupal/images/menu-enable-collab.png" alt="Enable collaboration">
+                <img src="/drupal/images/menu-enable-collab<?php $page_path === "enable-collaboration" ? print "-active" : "" ?>.png" alt="Enable collaboration">
             </a>
             <a href="engage-users" title="Engage users" id="header-menu-2" style="float: left; margin-top: 80px; margin-left: -60px;">
-                <img src="/drupal/images/menu-engage-users.png" alt="Engage users">
+                <img src="/drupal/images/menu-engage-users<?php $page_path === "engage-users" ? print "-active" : "" ?>.png" alt="Engage users">
             </a>
             <a href="embrace-openness" title="Embrace openness" id="header-menu-3" style="float: left; margin-left: 18px;">
-                <img src="/drupal/images/menu-embrace-openness.png" alt="Embrace openness">
+                <img src="/drupal/images/menu-embrace-openness<?php $page_path === "embrace-openness" ? print "-active" : "" ?>.png" alt="Embrace openness">
             </a>
             <a href="drive-reuse" title="Drive re-use" id="header-menu-4" style="float: left; margin-left: 20px; margin-top: 80px;">
-                <img src="/drupal/images/menu-drive-reuse.png" alt="Drive re-use">
+                <img src="/drupal/images/menu-drive-reuse<?php $page_path === "drive-reuse" ? print "-active" : "" ?>.png" alt="Drive re-use">
             </a>
             <a href="inspire-discovery" title="Inspire discovery" id="header-menu-5" style="float: left; margin-left: -65px; margin-top: 230px;">
-                <img src="/drupal/images/menu-inspire-discovery.png" alt="Inspire discovery">
+                <img src="/drupal/images/menu-inspire-discovery<?php $page_path === "inspire-discovery" ? print "-active" : "" ?>.png" alt="Inspire discovery">
             </a>
         </div>
 
@@ -154,7 +154,7 @@
         <?php if ($site_slogan): ?>
           <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?>>
             <?php print $site_slogan; ?>
-            <div style="color: #C0F4FF; word-spacing: normal; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana;">Release the knowledge</div>
+            <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 53px;">Release the knowledge withcollaborative, academic and open source software that’s reshaping education.</div>
           </div>
         <?php endif; ?>
 
@@ -226,13 +226,6 @@
     <div id="content" class="column"><div class="section">
       <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
       <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title">
-          <?php print $title; ?>
-        </h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
       <?php if ($tabs): ?>
         <div class="tabs">
           <?php print render($tabs); ?>

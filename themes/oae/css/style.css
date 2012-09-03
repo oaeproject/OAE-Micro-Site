@@ -1605,7 +1605,7 @@ div.admin-panel .description {
 #site-slogan {
     font-size: 50px;
     line-height: 65px;
-    margin-top: 60px;
+    margin-top: 30px;
     word-spacing: 960px;
 }
 body, #site-slogan, .ui-widget, .comment-form label {
