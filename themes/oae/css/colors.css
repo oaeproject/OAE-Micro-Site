@@ -36,6 +36,9 @@ html {
     height: 396px;
     margin-top: 70px;
 }
+#header.without-header {
+    height: 0px;
+}
 #page,
 #main-wrapper,
 #main-menu-links li a.active,

@@ -85,9 +85,20 @@
  * @see html.tpl.php
  */
 ?>
+
 <div id="page-wrapper"><div id="page">
 
-  <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
+    <?php
+      $page_path = str_replace($base_path, '', url($_GET['q']));
+      $header = false;
+      $large_header_pages = array("node", "enable-collaboration", "engage-users", "embrace-openness", "drive-reuse", "inspire-discovery");
+      if (in_array($page_path, $large_header_pages)) {
+          $header = true;
+      }
+    ?>
+
+  <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?> <?php print !$header ? 'without-header': ''; ?>">
+      <div class="section clearfix">
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -95,9 +106,9 @@
       </a>
     <?php endif; ?>
 
-    <?php if ($site_name || $site_slogan): ?>
-      <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
+    <?php if (($site_name || $site_slogan) && $header): ?>
 
+      <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
           <div id="header-menu" style="float:right;">
               <a href="enable-collaboration" title="Enable collaboration" id="header-menu-1" style="float:left;margin-top:230px;">
                   <img src="<?php print $base_path ?>images/menu-enable-collab.png" alt="Enable collaboration"/>
