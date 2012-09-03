@@ -109,23 +109,33 @@
     <?php if (($site_name || $site_slogan) && $header): ?>
 
       <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
-          <div id="header-menu" style="float:right;">
-              <a href="enable-collaboration" title="Enable collaboration" id="header-menu-1" style="float:left;margin-top:230px;">
-                  <img src="<?php print $base_path ?>images/menu-enable-collab.png" alt="Enable collaboration"/>
-              </a>
-              <a href="engage-users" title="Engage users" id="header-menu-2" style="float:left;margin-top:110px;">
-                  <img src="<?php print $base_path ?>images/menu-engage-users.png" alt="Engage users"/>
-              </a>
-              <a href="embrace-openness" title="Embrace openness" id="header-menu-3" style="float:left;">
-                  <img src="<?php print $base_path ?>images/menu-embrace-openness.png" alt="Embrace openness"/>
-              </a>
-              <a href="drive-reuse" title="Drive re-use" id="header-menu-4" style="float:left;margin-top:110px;">
-                  <img src="<?php print $base_path ?>images/menu-drive-reuse.png" alt="Drive re-use"/>
-              </a>
-              <a href="inspire-discovery" title="Inspire discovery" id="header-menu-5" style="float:left;margin-top:230px;">
-                  <img src="<?php print $base_path ?>images/menu-inspire-discovery.png" alt="Inspire discovery"/>
-              </a>
-          </div>
+          <div style="position: absolute; width: 190px; margin-top: 30px; margin-left: 870px;">
+            <div style="color: #C0F4FF; word-spacing: normal; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana;">Featured widget</div>
+            <div>
+              <img alt="Calendar Feed" src="/drupal/images/calendar-feed-widget-icon.png" style="float: right; border-radius: 5px 5px 5px 5px; height: 40px; width: 40px; margin: 7px 15px;">
+              <div style="background-color: #fff; border-radius: 5px 5px 5px 5px; box-shadow: 0px 0px 3px 1px rgb(85, 85, 85); margin-top: 9px; padding: 10px 10px 10px 15px;">
+                  <a href="http://oae-widgets.sakaiproject.org/widget/calendar-feed" title="Calendar Feed" style="color: #0074A7; font-weight: bold; display: block; margin-top: 1px; font-size: 13px; line-height: 12px;">Calendar Feed</a>
+                  <span style="color: #333; font-size: 12px;">by Hal Blackburn</span>
+              </div>
+            </div>
+        </div>
+        <div id="header-menu" style="float:right;width:758px;">
+            <a href="enable-collaboration" title="Enable collaboration" id="header-menu-1" style="float: left; margin-top: 230px; margin-left: 20px;">
+                <img src="/drupal/images/menu-enable-collab.png" alt="Enable collaboration">
+            </a>
+            <a href="engage-users" title="Engage users" id="header-menu-2" style="float: left; margin-top: 80px; margin-left: -60px;">
+                <img src="/drupal/images/menu-engage-users.png" alt="Engage users">
+            </a>
+            <a href="embrace-openness" title="Embrace openness" id="header-menu-3" style="float: left; margin-left: 18px;">
+                <img src="/drupal/images/menu-embrace-openness.png" alt="Embrace openness">
+            </a>
+            <a href="drive-reuse" title="Drive re-use" id="header-menu-4" style="float: left; margin-left: 20px; margin-top: 80px;">
+                <img src="/drupal/images/menu-drive-reuse.png" alt="Drive re-use">
+            </a>
+            <a href="inspire-discovery" title="Inspire discovery" id="header-menu-5" style="float: left; margin-left: -65px; margin-top: 230px;">
+                <img src="/drupal/images/menu-inspire-discovery.png" alt="Inspire discovery">
+            </a>
+        </div>
 
         <?php if ($site_name): ?>
           <?php if ($title): ?>
