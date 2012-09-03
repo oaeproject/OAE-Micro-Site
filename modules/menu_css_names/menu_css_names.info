@@ -1,0 +1,10 @@
+name = "Menu CSS Names"
+description = "Adds css class names to drupal menus."
+dependencies[] = menu
+core = 7.x
+; Information added by drupal.org packaging script on 2011-08-04
+version = "7.x-1.0-beta1"
+core = "7.x"
+project = "menu_css_names"
+datestamp = "1312419723"
+
