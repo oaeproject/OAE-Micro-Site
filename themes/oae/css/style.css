@@ -1674,3 +1674,23 @@ body, #site-slogan, .ui-widget, .comment-form label {
     font-weight: bold;
     text-shadow: none;
 }
+
+/* Override specific div css for contacts page to have correct floats */
+#node-19 > .content > .field {
+    float: left;
+}
+#node-19 > .content > #webform-client-form-19 {
+    padding-top: 30px;
+}
+#node-19 > .content > #webform-client-form-19 input[type=text],
+#node-19 > .content > #webform-client-form-19 select {
+    float: right;
+}
+#node-19 > .content > #webform-client-form-19 #webform-component-your-message textarea {
+    width: 700px;
+}
+#node-19 > .content > #webform-client-form-19 #edit-actions{
+    float: right;
+    margin-top: 0;
+    padding-top: 0;
+}
