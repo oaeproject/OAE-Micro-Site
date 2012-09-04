@@ -33,7 +33,7 @@ html {
 }
 #header {
     background: url("../images/main-banner.png") no-repeat scroll center top transparent;
-    height: 396px;
+    height: 395px;
     margin-top: 70px;
 }
 #header.without-header {

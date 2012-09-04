@@ -120,7 +120,7 @@
             </div>
         </div>
         <div id="header-menu" style="float:right;width:758px;">
-            <a href="enable-collaboration" title="Enable collaboration" id="header-menu-1" style="float: left; margin-top: 230px; margin-left: 20px;">
+            <a href="enable-collaboration" title="Enable collaboration" id="header-menu-1" style="float: left; margin-top: 230px; margin-left: -15px;">
                 <img src="/drupal/images/menu-enable-collab<?php $page_path === "enable-collaboration" ? print "-active" : "" ?>.png" alt="Enable collaboration">
             </a>
             <a href="engage-users" title="Engage users" id="header-menu-2" style="float: left; margin-top: 80px; margin-left: -60px;">
