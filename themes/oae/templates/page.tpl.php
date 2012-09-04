@@ -109,7 +109,7 @@
     <?php if (($site_name || $site_slogan) && $header): ?>
 
       <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
-          <div style="position: absolute; width: 190px; margin-top: 10px; margin-left: 835px;">
+          <div style="display:none;position: absolute; width: 190px; margin-top: 10px; margin-left: 835px;">
             <div style="color: #C0F4FF; word-spacing: normal; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; margin-left: 15px;margin-bottom: 12px;">Featured widget</div>
             <div>
               <img alt="Calendar Feed" src="/drupal/images/calendar-feed-widget-icon.png" style="float: right; border-radius: 5px 5px 5px 5px; height: 40px; width: 40px; margin: 7px 15px;">
@@ -154,7 +154,7 @@
         <?php if ($site_slogan): ?>
           <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?>>
             <?php print $site_slogan; ?>
-            <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 53px;">Release the knowledge withcollaborative, academic and open source software that’s reshaping education.</div>
+            <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 53px;">Release the knowledge with collaborative, academic and open source software that’s reshaping education.</div>
           </div>
         <?php endif; ?>
 

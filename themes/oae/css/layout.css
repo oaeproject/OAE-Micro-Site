@@ -65,14 +65,30 @@ body,
   width: 280px;
 }
 #footer-wrapper {
-  padding: 35px 5px 30px;
+  padding: 25px 5px 20px;
 }
 .region-footer-firstcolumn,
 .region-footer-secondcolumn,
 .region-footer-thirdcolumn,
 .region-footer-fourthcolumn {
+  border-left: 1px solid #444;
+  border-right: 1px solid #303030;
+  height: 280px;
   padding: 0 10px;
-  width: 220px;
+  width: 260px;
+}
+.region-footer-firstcolumn {
+  border-left: none;
+  width: 270px;
+}
+.region-footer-thirdcolumn {
+  padding: 0 10px;
+  width: 210px;
+}
+.region-footer-fourthcolumn {
+  border-right: none;
+  padding: 0 10px;
+  width: 300px;
 }
 #footer {
   width: 940px;
@@ -83,7 +99,7 @@ body,
 #header div.section, #featured div.section, #messages div.section, #main, #triptych, #footer-columns, #footer {
     margin-left: auto;
     margin-right: auto;
-    width: 1050px;
+    width: 1130px;
 }
 .with-secondary-menu .region-header {
     margin-top: 0;
@@ -95,4 +111,33 @@ body,
     right: 0;
     top: -50px;
     width: 480px;
+}
+#footer-wrapper table,
+#footer-wrapper table tr,
+#footer-wrapper table tr td {
+    background: none !important;
+    border-collapse: inherit;
+}
+.view-recent-posts .views-row {
+    margin-top: 10px;
+}
+.view-recent-posts .views-row-first {
+    margin-top: 0;
+}
+.view-recent-posts .views-field-title {
+    margin-bottom: 3px;
+}
+.view-recent-posts .views-field-name {
+    color: #fff;
+    float: left;
+    font-size: 11px;
+    font-style: italic;
+    padding-right: 4px;
+}
+.view-recent-posts .field-content a {
+    font-style: normal !important;
+    text-decoration: none !important;
+}
+.view-recent-posts .views-field-created {
+    font-size: 11px;
 }

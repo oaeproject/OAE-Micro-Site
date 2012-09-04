@@ -787,25 +787,27 @@ ul.links {
 /* ------------------ Footer ------------------ */
 
 #footer-wrapper {
-  color: #c0c0c0;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 0.857em;
+  color: #dedede;
+  font-size: 12px;
 }
 #footer-wrapper a {
-  color: #fcfcfc;
-  color: rgba(255, 255, 255, 0.8);
+  color: #dedede;
+  text-decoration: underline;
+  font-style: italic;
 }
 #footer-wrapper a:hover,
 #footer-wrapper a:focus {
-  color: #fefefe;
+  color: #fff;
   color: rgba(255, 255, 255, 0.95);
   text-decoration: underline;
 }
 #footer-wrapper .block {
   margin: 20px 0;
-  border: 1px solid #444;
-  border-color: rgba(255, 255, 255, 0.1);
   padding: 10px;
+}
+#footer-columns {
+  background: url('../logo_white.png') no-repeat 18px top transparent !important;
+  padding-top: 10px;
 }
 #footer-columns .block-menu,
 #footer .block {
@@ -824,12 +826,10 @@ ul.links {
   margin: 0;
 }
 #footer-columns h2 {
-  border-bottom: 1px solid #555;
-  border-color: rgba(255, 255, 255, 0.15);
-  font-size: 1em;
-  margin-bottom: 0;
-  padding-bottom: 3px;
-  text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-bottom: 3px;
 }
 #footer-columns .content {
   margin-top: 0;
@@ -1651,7 +1651,8 @@ body, #site-slogan, .ui-widget, .comment-form label {
     padding-bottom: 0;
 }
 #main-menu-links li.try-sakai-oae,
-#main-menu-links li.widget-library {
+#main-menu-links li.widget-library,
+.oae-big-button {
     background: #646464; /* Old browsers */
     background: -moz-linear-gradient(top, #646464 0%, #363636 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#646464), color-stop(100%,#363636)); /* Chrome,Safari4+ */
@@ -1660,6 +1661,7 @@ body, #site-slogan, .ui-widget, .comment-form label {
     background: -ms-linear-gradient(top, #646464 0%,#363636 100%); /* IE10+ */
     background: linear-gradient(to bottom, #646464 0%,#363636 100%); /* W3C */
     border-radius: 4px;
+    display: block;
     margin: -3px 12px 0;
     padding: 3px;
 }
@@ -1669,12 +1671,20 @@ body, #site-slogan, .ui-widget, .comment-form label {
 }
 
 #main-menu-links li.try-sakai-oae a,
-#main-menu-links li.widget-library a {
-    color: #fff;
+#main-menu-links li.widget-library a,
+a.oae-big-button {
+    color: #fff !important;
+    font-style: normal !important;
     font-weight: bold;
     text-shadow: none;
+    text-decoration: none !important;
 }
 
+a.oae-big-button {
+    height: 35px;
+    line-height: 35px;
+    padding: 0;
+}
 /* Override specific div css for contacts page to have correct floats */
 #node-19 > .content > .field {
     float: left;
@@ -1687,7 +1697,8 @@ body, #site-slogan, .ui-widget, .comment-form label {
     float: right;
 }
 #node-19 > .content > #webform-client-form-19 #webform-component-your-message textarea {
-    width: 700px;
+    height: 170px;
+    width: 780px;
 }
 #node-19 > .content > #webform-client-form-19 #edit-actions{
     float: right;
