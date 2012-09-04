@@ -827,9 +827,11 @@ ul.links {
 }
 #footer-columns h2 {
     color: #FFFFFF;
+    display: inline-block;
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding-bottom: 3px;
+    padding-right: 30px;
 }
 #footer-columns .content {
   margin-top: 0;

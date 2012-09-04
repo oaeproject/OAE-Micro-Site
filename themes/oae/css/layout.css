@@ -73,7 +73,7 @@ body,
 .region-footer-fourthcolumn {
   border-left: 1px solid #444;
   border-right: 1px solid #303030;
-  height: 280px;
+  height: 300px;
   padding: 0 10px;
   width: 260px;
 }
@@ -140,4 +140,18 @@ body,
 }
 .view-recent-posts .views-field-created {
     font-size: 11px;
+}
+.region-footer-firstcolumn h2 {
+    background: url("../images/info-icon-white.png") no-repeat scroll right center transparent;
+}
+.region-footer-secondcolumn h2 {
+    background: url("../images/rss-icon-white-inverted.png") no-repeat scroll right center transparent;
+}
+.region-footer-thirdcolumn h2 {
+    background: url("../images/message-icon-white.png") no-repeat scroll right center transparent;
+    padding-right: 37px !important;
+}
+.region-footer-firstcolumn .content > p:first-child,
+.region-footer-thirdcolumn .content > p:first-child {
+    margin-top: 0 !important;
 }
