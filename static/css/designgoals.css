@@ -1,0 +1,25 @@
+.designgoals_column {
+    float: left;
+    padding: 0 12px;
+    text-align: left;
+    width: 370px;
+}
+h1#designgoals_header {
+    color: #2085B2;
+    font-size: 25px !important;
+    font-weight: normal;
+    line-height: 27px;
+    padding: 12px 12px 0 0 !important;
+}
+h2.designgoals_header2 {
+    color: #0074A7;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    line-height: 22px;
+}
+p {
+    color: #666666;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+}
