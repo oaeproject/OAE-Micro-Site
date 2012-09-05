@@ -97,6 +97,7 @@
       }
     ?>
 
+  <div id="white-banner-header"></div>
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?> <?php print !$header ? 'without-header': ''; ?>">
       <div class="section clearfix">
 
