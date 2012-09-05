@@ -1,0 +1,80 @@
+table#cc_table {
+    border: none;
+    border-collapse: collapse;
+    font-family: Arial;
+    color: #444;
+}
+table#cc_table col:nth-child(2n+4) {
+    background: #f0f0f0
+}
+table#cc_table tbody tr:first-child {
+    height: 120px;
+    padding: 12px 12px 0 0;
+    vertical-align: top;
+}
+table#cc_table tr th {
+    background: transparent !important;
+    border: none;
+    color: #444;
+    font-size: 14px !important;
+    padding: 12px !important;
+    text-align: left;
+}
+table#cc_table tr th span {
+    font-size: 12px;
+    font-weight: normal;
+}
+table#cc_table tr th:first-child {
+    color: #2085B2;
+    font-size: 25px !important;
+    font-weight: normal;
+    line-height: 27px;
+    padding: 12px 12px 0 0 !important;
+}
+table#cc_table tr td {
+    border: none;
+    font-size: 13px;
+    height: 25px;
+    width: 117px !important;
+}
+table#cc_table tr td:first-child {
+    font-style: italic;
+    padding-left: 20px !important;
+    width: 300px !important;
+}
+table#cc_table tr td:first-child + td,
+table#cc_table tr th:first-child + th {
+    background-color: #e4f5fb !important;
+    text-align: center;
+}
+table#cc_table tr th:first-child + th {
+    padding: 10px 12px 12px !important;
+}
+table#cc_table tr.header {
+    border-top: 1px solid #d6d5d2;
+}
+table#cc_table tr.first {
+    border-top: none;
+}
+table#cc_table tr.header td:first-child {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    padding-left: 0 !important;
+    padding-top: 7px;
+}
+table#cc_table .hasit {
+    background: url("../images/green-tick.png") no-repeat center center transparent;
+}
+table#cc_table .sortofhasit {
+    background: url("../images/orange-dash.png") no-repeat center center transparent;
+}
+table#cc_table .missing {
+    background: url("../images/red-cross.png") no-repeat center center transparent;
+}
+
+
+/* Override lightbox2 CSS */
+#imageData #imageDetails{
+    display: none !important;
+}
