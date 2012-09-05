@@ -215,6 +215,9 @@ tr.odd {
 }
 td.hasbgcolor {
   background: #dcdad3;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
 }
 td.hasbgcolor p {
   margin-bottom: 0;
