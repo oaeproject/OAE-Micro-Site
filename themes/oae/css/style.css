@@ -1,4 +1,4 @@
-
+@import './editor.css';
 /* ---------- Overall Specifications ---------- */
 
 body {
@@ -198,7 +198,6 @@ table tbody tr th {
 tr td,
 tr th {
   padding: 4px 9px;
-  border: 1px solid #fff;
   text-align: left; /* LTR */
 }
 #footer-wrapper tr td,
@@ -206,14 +205,15 @@ tr th {
   border-color: #555;
   border-color: rgba(255, 255, 255, 0.18);
 }
+tbody {
+    border-top: none;
+}
 tr.odd {
   background: #e4e4e4;
   background: rgba(0, 0, 0, 0.105);
 }
-tr,
-tr.even {
-  background: #efefef;
-  background: rgba(0, 0, 0, 0.063);
+td.hasbgcolor {
+  background: #dcdad3;
 }
 table ul.links {
   margin: 0;
