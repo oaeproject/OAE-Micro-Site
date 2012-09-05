@@ -121,19 +121,19 @@
         </div>
         <div id="header-menu" style="float:right;width:758px;">
             <a href="enable-collaboration" title="Enable collaboration" id="header-menu-1" style="float: left; margin-top: 230px; margin-left: -15px;">
-                <img src="/drupal/images/menu-enable-collab<?php $page_path === "enable-collaboration" ? print "-active" : "" ?>.png" alt="Enable collaboration">
+                <img src="<?php print $directory ?>/images/menu-enable-collab<?php $page_path === "enable-collaboration" ? print "-active" : "" ?>.png" alt="Enable collaboration">
             </a>
             <a href="engage-users" title="Engage users" id="header-menu-2" style="float: left; margin-top: 80px; margin-left: -60px;">
-                <img src="/drupal/images/menu-engage-users<?php $page_path === "engage-users" ? print "-active" : "" ?>.png" alt="Engage users">
+                <img src="<?php print $directory ?>/images/menu-engage-users<?php $page_path === "engage-users" ? print "-active" : "" ?>.png" alt="Engage users">
             </a>
             <a href="embrace-openness" title="Embrace openness" id="header-menu-3" style="float: left; margin-left: 18px;">
-                <img src="/drupal/images/menu-embrace-openness<?php $page_path === "embrace-openness" ? print "-active" : "" ?>.png" alt="Embrace openness">
+                <img src="<?php print $directory ?>/images/menu-embrace-openness<?php $page_path === "embrace-openness" ? print "-active" : "" ?>.png" alt="Embrace openness">
             </a>
             <a href="drive-reuse" title="Drive re-use" id="header-menu-4" style="float: left; margin-left: 20px; margin-top: 80px;">
-                <img src="/drupal/images/menu-drive-reuse<?php $page_path === "drive-reuse" ? print "-active" : "" ?>.png" alt="Drive re-use">
+                <img src="<?php print $directory ?>/images/menu-drive-reuse<?php $page_path === "drive-reuse" ? print "-active" : "" ?>.png" alt="Drive re-use">
             </a>
             <a href="inspire-discovery" title="Inspire discovery" id="header-menu-5" style="float: left; margin-left: -65px; margin-top: 230px;">
-                <img src="/drupal/images/menu-inspire-discovery<?php $page_path === "inspire-discovery" ? print "-active" : "" ?>.png" alt="Inspire discovery">
+                <img src="<?php print $directory ?>/images/menu-inspire-discovery<?php $page_path === "inspire-discovery" ? print "-active" : "" ?>.png" alt="Inspire discovery">
             </a>
         </div>
 
