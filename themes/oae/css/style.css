@@ -199,6 +199,7 @@ tr td,
 tr th {
   padding: 4px 9px;
   text-align: left; /* LTR */
+  vertical-align: top;
 }
 #footer-wrapper tr td,
 #footer-wrapper tr th {
@@ -214,6 +215,9 @@ tr.odd {
 }
 td.hasbgcolor {
   background: #dcdad3;
+}
+td.hasbgcolor p {
+  margin-bottom: 0;
 }
 table ul.links {
   margin: 0;
