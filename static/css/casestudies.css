@@ -1,4 +1,4 @@
-h1 {
+#casestudies_container h1 {
     color: #0074A7 !important;
     font-family: Arial,"Times New Roman",Times,serif;
     font-size: 18px;
@@ -6,7 +6,7 @@ h1 {
     letter-spacing: 0.07em;
     line-height: 22px;
 }
-h2 {
+#casestudies_container h2 {
     color: #0074A7 !important;
     font-family: Arial,"Times New Roman",Times,serif;
     font-size: 14px;
@@ -14,7 +14,7 @@ h2 {
     letter-spacing: 0.07em;
     line-height: 22px;
 }
-.cs_box_container {
+#casestudies_container .cs_box_container {
     background-color: #DBD9D2;
     border-radius: 0 0 5px 5px;
     -moz-border-radius: 0 0 5px 5px;
@@ -25,20 +25,20 @@ h2 {
     padding: 12px 20px;
     width: 309px;
 }
-#cs_carousel_container {
+#casestudies_container #cs_carousel_container {
     height: 130px;
     margin: 0 auto 10px;
     padding: 20px 0 0;
     width: 1070px;
 }
-#cs_carousel_container ul {
+#casestudies_container #cs_carousel_container ul {
     height: 110px;
     list-style: none;
     margin: 0 auto;
     padding: 0;
     width: 890px;
 }
-#cs_carousel_container ul li {
+#casestudies_container #cs_carousel_container ul li {
     cursor: pointer;
     display: inline;
     float: left;
@@ -47,53 +47,53 @@ h2 {
     width: 270px;
     padding: 15px 0;
 }
-#cs_carousel_container ul li:last-child {
+#casestudies_container #cs_carousel_container ul li:last-child {
     margin-right: 0;    
 }
-#cs_carousel_container ul li img:first-child {
+#casestudies_container #cs_carousel_container ul li img:first-child {
     display: none;
 }
-#cs_carousel_container ul li.active {
+#casestudies_container #cs_carousel_container ul li.active {
     background-color: #fff;
     border-radius: 7px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     box-shadow: 0 0 3px 1px #666;
 }
-#cs_carousel_container ul li img {
+#casestudies_container #cs_carousel_container ul li img {
     height: 80px;
     width: 270px;
 }
-#cs_carousel_container ul li.active img:first-child {
+#casestudies_container #cs_carousel_container ul li.active img:first-child {
     display: block;
 }
-#cs_carousel_container ul li.active img:first-child + img {
+#casestudies_container #cs_carousel_container ul li.active img:first-child + img {
     display: none;
 }
-.cs_case_content {
+#casestudies_container .cs_case_content {
     float: left;
     width: 700px;
 }
-.cs_case_content ul {
+#casestudies_container .cs_case_content ul {
     list-style: none outside none;
     margin: 0;
     padding: 0;
 }
-.cs_case_content p,
-.cs_box_container p,
-.cs_case_content ul {
+#casestudies_container .cs_case_content p,
+#casestudies_container .cs_box_container p,
+#casestudies_container .cs_case_content ul {
     color: #444;
     font-family: Arial,"Times New Roman",Times,serif;
     font-size: 13px;
     letter-spacing: 0.04em;
 }
-.cs_box_container p.boxedText{
+#casestudies_container .cs_box_container p.boxedText{
     color: #303030;
     font-size: 15px;
     letter-spacing: 0.04em;
     line-height: 19px;
     text-shadow: 1px 1px 1px #FFFFFF;
 }
-.subheader {
+#casestudies_container .subheader {
     color: #222 !important;
 }
