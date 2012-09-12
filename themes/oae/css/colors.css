@@ -37,7 +37,15 @@ html {
     margin-top: 70px;
 }
 #header.without-header {
-    height: 0px;
+    background: url("../images/main-banner-small.png") no-repeat scroll center top transparent;
+    height: 156px;
+}
+#header.without-header #site-slogan {
+    clear: both;
+    color: #FFFFFF;
+    margin-left: 15px;
+    padding-top: 30px;
+    word-spacing: normal;
 }
 #white-banner-header {
     background-color: #FFFFFF;

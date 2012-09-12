@@ -45,10 +45,25 @@
  */
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-
+  <?php 
+      $titleUrl = false;
+      if ($block->subject === 'About us'):
+        $titleUrl = 'about';
+      elseif ($block->subject === 'Get in touch'):
+        $titleUrl = 'contact';
+      endif;
+  ?>
   <?php print render($title_prefix); ?>
 <?php if ($block->subject): ?>
-  <h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
+  <h2<?php print $title_attributes; ?>>
+    <?php if ($titleUrl): ?>
+        <a href="<?php print $titleUrl ?>" title="<?php print $block->subject ?>">
+    <?php endif;?>
+    <?php print $block->subject ?>
+    <?php if ($titleUrl): ?>
+        </a>
+    <?php endif;?>
+  </h2>
 <?php endif;?>
   <?php print render($title_suffix); ?>
 

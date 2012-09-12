@@ -832,7 +832,7 @@ ul.links {
 #footer .block h2 {
   margin: 0;
 }
-#footer-columns h2 {
+#footer-columns h2, {
     color: #FFFFFF;
     display: inline-block;
     font-size: 16px;
@@ -1066,6 +1066,14 @@ a.button {
   -webkit-border-radius: 15px;
   border-radius: 15px;
 }
+input.form-submit {
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 10px 8px 10px 36px;
+    background: url("../images/message-icon-black.png") no-repeat scroll 10px center #f5f5f5;
+}
 a.button:link,
 a.button:visited,
 a.button:hover,
@@ -1199,7 +1207,7 @@ select.form-select {
 }
 input.form-submit:hover,
 input.form-submit:focus {
-  background: #dedede;
+  background-color: #dedede;
 }
 .password-suggestions ul li {
   margin-left: 1.2em; /* LTR */
@@ -1209,7 +1217,9 @@ input.form-submit:focus {
   margin-top: 2px;
 }
 .form-item label {
-  font-size: 0.929em;
+    display: inline-block;
+    font-size: 0.929em;
+    width: 150px;
 }
 .form-type-radio label,
 .form-type-checkbox label {
@@ -1612,6 +1622,7 @@ div.admin-panel .description {
 
 /* OAE Custom */
 #site-slogan {
+    font-family: verdana !important;
     font-size: 50px;
     line-height: 65px;
     margin-top: 30px;
@@ -1701,10 +1712,6 @@ a.oae-big-button {
 #node-19 > .content > #webform-client-form-19 {
     padding-top: 30px;
 }
-#node-19 > .content > #webform-client-form-19 input[type=text],
-#node-19 > .content > #webform-client-form-19 select {
-    float: right;
-}
 #node-19 > .content > #webform-client-form-19 #webform-component-your-message textarea {
     height: 170px;
     width: 780px;
@@ -1713,4 +1720,10 @@ a.oae-big-button {
     float: right;
     margin-top: 0;
     padding-top: 0;
+}
+#footer-columns h2 a {
+    color: #FFFFFF;
+    font-size: 1.143em;
+    font-style: normal;
+    text-decoration: none;
 }

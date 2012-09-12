@@ -100,7 +100,6 @@
   <div id="white-banner-header"></div>
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?> <?php print !$header ? 'without-header': ''; ?>">
       <div class="section clearfix">
-
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -152,14 +151,36 @@
           <?php endif; ?>
         <?php endif; ?>
 
+
         <?php if ($site_slogan): ?>
-          <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?>>
-            <?php print $site_slogan; ?>
-            <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 53px;">Release the knowledge with collaborative, academic and open source software that’s reshaping education.</div>
+          <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?> <?php if (!$is_front){ print 'style="word-spacing:normal;"';} ?>>
+              <?php if ($is_front): ?>
+                                  <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 200px; position: absolute; width: 300px;">Release the knowledge with collaborative, academic and open source software that’s reshaping education.</div>
+                <?php print $site_slogan; ?>
+              <?php else: ?>
+                  <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 200px; width: 300px; position: absolute;">
+                    <?php if (drupal_get_title() === 'Enable collaboration'): ?>
+                        Through collaboration, students, faculty and researchers develop deeper understandings of their subjects, evolve more effective and efficient ways to teach, and grow the knowledge base. 
+                    <?php elseif (drupal_get_title() === 'Engage users'): ?>
+                        Sakai OAE is designed and developed to achieve rewarding, resonant and vibrant experiences for users and implementers alike.
+                    <?php elseif (drupal_get_title() === 'Embrace openness'): ?>
+                        Open exchanges of ideas and information spark new directions and take each of us closer to the truth.
+                    <?php elseif (drupal_get_title() === 'Drive re-use'): ?>
+                        Reusing existing academic materials and entities enables people to learn, tutor and research more efficiently, and to produce richer, higher-quality work.
+                    <?php elseif (drupal_get_title() === 'Inspire discovery'): ?>
+                        We all know the thrill of discovery. It’s the excitement of opening fresh vistas, disproving old orthodoxies and establishing new truths. It’s the human imperative driving academic enquiry. 
+                    <?php endif;?>
+                  </div>
+                  <?php print drupal_get_title(); ?>
+              <?php endif;?>
           </div>
         <?php endif; ?>
 
       </div> <!-- /#name-and-slogan -->
+    <?php endif; ?>
+
+    <?php if (!$header): ?>
+        <div id="site-slogan"><?php print drupal_get_title(); ?></div>
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
