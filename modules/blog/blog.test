@@ -147,7 +147,7 @@ class BlogTestCase extends DrupalWebTestCase {
     $this->assertTitle($node->title . ' | Drupal', t('Blog node was displayed'));
     $breadcrumb = array(
       l(t('Home'), NULL),
-      l(t('Blogs'), 'blog'),
+      l(t('Blog'), 'blog'),
       l(t("!name's blog", array('!name' => format_username($node_user))), 'blog/' . $node_user->uid),
     );
     $this->assertRaw(theme('breadcrumb', array('breadcrumb' => $breadcrumb)), t('Breadcrumbs were displayed'));
@@ -194,7 +194,7 @@ class BlogTestCase extends DrupalWebTestCase {
     // Confirm a blog page was displayed.
     $this->drupalGet('blog');
     $this->assertResponse(200);
-    $this->assertTitle('Blogs | Drupal', t('Blog page was displayed'));
+    $this->assertTitle('Blog | Drupal', t('Blog page was displayed'));
     $this->assertText(t('Home'), t('Breadcrumbs were displayed'));
     $this->assertLink(t('Create new blog entry'));
 

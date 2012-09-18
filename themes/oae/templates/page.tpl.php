@@ -155,7 +155,7 @@
         <?php if ($site_slogan): ?>
           <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?> <?php if (!$is_front){ print 'style="word-spacing:normal;"';} ?>>
               <?php if ($is_front): ?>
-                                  <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 200px; position: absolute; width: 300px;">Grow and release knowledge with the collaborative, open-source software that’s reshaping education.</div>
+                  <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 200px; position: absolute; width: 300px;">Grow and release knowledge with the collaborative, open-source software that’s reshaping education.</div>
                 <?php print $site_slogan; ?>
               <?php else: ?>
                   <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 200px; width: 300px; position: absolute;">
@@ -180,7 +180,11 @@
     <?php endif; ?>
 
     <?php if (!$header): ?>
-        <div id="site-slogan"><?php print drupal_get_title(); ?></div>
+        <?php if (strpos($page_path, 'node/') === 0): ?>
+            <div id="site-slogan">Blog</div>
+        <?php else: ?>
+            <div id="site-slogan"><?php print drupal_get_title(); ?></div>
+        <?php endif;?>
     <?php endif; ?>
 
     <?php print render($page['header']); ?>

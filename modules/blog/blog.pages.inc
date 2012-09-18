@@ -79,7 +79,7 @@ function blog_page_last() {
   else {
     drupal_set_message(t('No blog entries have been created.'));
   }
-  drupal_add_feed('blog/feed', t('RSS - blogs'));
+  drupal_add_feed('blog/feed', t('RSS - Blog'));
 
   return $build;
 }
