@@ -49,6 +49,8 @@
       $titleUrl = false;
       if ($block->subject === 'About us'):
         $titleUrl = 'about';
+      elseif ($block->subject === 'Recent Post'):
+        $titleUrl = 'blog';
       elseif ($block->subject === 'Get in touch'):
         $titleUrl = 'contact';
       endif;

@@ -32,12 +32,12 @@ html {
     background: url("../images/page-bg.png") repeat scroll left top transparent;
 }
 #header {
-    background: url("../images/main-banner.png") no-repeat scroll center top transparent;
+    background: url("../images/main-banner.png") no-repeat scroll center top #004c86;
     height: 395px;
     margin-top: 70px;
 }
 #header.without-header {
-    background: url("../images/main-banner-small.png") no-repeat scroll center top transparent;
+    background: url("../images/main-banner-small.png") no-repeat scroll center top #004c86;
     height: 156px;
 }
 #header.without-header #site-slogan {
