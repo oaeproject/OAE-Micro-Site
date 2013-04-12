@@ -91,7 +91,7 @@
     <?php
       $page_path = str_replace($base_path, '', url($_GET['q']));
       $header = false;
-      $large_header_pages = array("node", "enable-collaboration", "engage-users", "embrace-openness", "drive-reuse", "inspire-discovery");
+      $large_header_pages = array("node", "enable-collaboration", "engage-users", "embrace-openness", "drive-reuse", "inspire-discovery", "home");
       if (in_array($page_path, $large_header_pages)) {
           $header = true;
       }
@@ -109,33 +109,9 @@
     <?php if (($site_name || $site_slogan) && $header): ?>
 
       <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
-          <div style="display:none;position: absolute; width: 190px; margin-top: 10px; margin-left: 835px;">
-            <div style="color: #C0F4FF; word-spacing: normal; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; margin-left: 15px;margin-bottom: 12px;">Featured widget</div>
-            <div>
-              <img alt="Calendar Feed" src="/drupal/images/calendar-feed-widget-icon.png" style="float: right; border-radius: 5px 5px 5px 5px; height: 40px; width: 40px; margin: 7px 15px;">
-              <div style="background-color: #fff; border-radius: 5px 5px 5px 5px; box-shadow: 0px 0px 3px 1px rgb(85, 85, 85); margin-top: 9px; padding: 10px 10px 10px 15px;">
-                  <a href="http://oae-widgets.sakaiproject.org/widget/calendar-feed" title="Calendar Feed" style="color: #0074A7; font-weight: bold; display: block; margin-top: 1px; font-size: 13px; line-height: 12px;">Calendar Feed</a>
-                  <span style="color: #333; font-size: 12px;">by Hal Blackburn</span>
-              </div>
-            </div>
-        </div>
-        <div id="header-menu" style="float:right;width:758px;">
-            <a href="enable-collaboration" title="Enable collaboration" id="header-menu-1" style="float: left; margin-top: 230px; margin-left: -15px;">
-                <img src="<?php print $directory ?>/images/menu-enable-collab<?php $page_path === "enable-collaboration" ? print "-active" : "" ?>.png" alt="Enable collaboration">
-            </a>
-            <a href="engage-users" title="Engage users" id="header-menu-2" style="float: left; margin-top: 80px; margin-left: -60px;">
-                <img src="<?php print $directory ?>/images/menu-engage-users<?php $page_path === "engage-users" ? print "-active" : "" ?>.png" alt="Engage users">
-            </a>
-            <a href="embrace-openness" title="Embrace openness" id="header-menu-3" style="float: left; margin-left: 18px;">
-                <img src="<?php print $directory ?>/images/menu-embrace-openness<?php $page_path === "embrace-openness" ? print "-active" : "" ?>.png" alt="Embrace openness">
-            </a>
-            <a href="drive-reuse" title="Drive re-use" id="header-menu-4" style="float: left; margin-left: 20px; margin-top: 80px;">
-                <img src="<?php print $directory ?>/images/menu-drive-reuse<?php $page_path === "drive-reuse" ? print "-active" : "" ?>.png" alt="Drive re-use">
-            </a>
-            <a href="inspire-discovery" title="Inspire discovery" id="header-menu-5" style="float: left; margin-left: -65px; margin-top: 230px;">
-                <img src="<?php print $directory ?>/images/menu-inspire-discovery<?php $page_path === "inspire-discovery" ? print "-active" : "" ?>.png" alt="Inspire discovery">
-            </a>
-        </div>
+        <?php if ($is_front): ?>
+          <iframe width="600" height="365" src="http://www.youtube.com/embed/uUb4kXCaJX0" frameborder="0" allowfullscreen style="float:right;"></iframe>
+        <?php endif; ?>
 
         <?php if ($site_name): ?>
           <?php if ($title): ?>
@@ -155,8 +131,8 @@
         <?php if ($site_slogan): ?>
           <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?> <?php if (!$is_front){ print 'style="word-spacing:normal;"';} ?>>
               <?php if ($is_front): ?>
-                  <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 200px; position: absolute; width: 300px;">Grow and release knowledge with the collaborative, open-source software that’s reshaping education.</div>
-                <?php print $site_slogan; ?>
+                  <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 200px; position: absolute; width: 300px;">The Open Academic Environment is a powerful new way for students and faculty to create knowledge, collaborate and connect with the world.</div>
+                  Supporting Academic Collaboration
               <?php else: ?>
                   <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 200px; width: 300px; position: absolute;">
                     <?php if (drupal_get_title() === 'Enable collaboration'): ?>
@@ -180,7 +156,7 @@
     <?php endif; ?>
 
     <?php if (!$header): ?>
-        <?php if (strpos($page_path, 'node/') === 0): ?>
+        <?php if (strpos($page_path, 'node/blog') === 0): ?>
             <div id="site-slogan">Blog</div>
         <?php else: ?>
             <div id="site-slogan"><?php print drupal_get_title(); ?></div>
@@ -237,7 +213,7 @@
     </div></div> <!-- /.section, /#featured -->
   <?php endif; ?>
 
-  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+  <div id="main-wrapper" class="clearfix" <?php if (drupal_get_title() === 'Home') { print ' style="display:none"'; } ?>><div id="main" class="clearfix">
 
     <?php if ($breadcrumb): ?>
       <div id="breadcrumb"><?php print $breadcrumb; ?></div>
