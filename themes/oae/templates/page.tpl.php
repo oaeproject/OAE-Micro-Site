@@ -110,7 +110,7 @@
 
       <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
         <?php if ($is_front): ?>
-          <iframe width="600" height="365" src="http://www.youtube.com/embed/uUb4kXCaJX0" frameborder="0" allowfullscreen style="float:right;"></iframe>
+          <iframe width="600" height="365" src="http://www.youtube.com/embed/cfiM87Y0pWw" frameborder="0" allowfullscreen style="float:right;"></iframe>
         <?php endif; ?>
 
         <?php if ($site_name): ?>
@@ -136,7 +136,7 @@
               <?php else: ?>
                   <div style="color: #C0F4FF; font-size: 14px; letter-spacing: 0.06em; font-family: Verdana; word-spacing: normal; line-height: normal; margin-top: 200px; width: 300px; position: absolute;">
                     <?php if (drupal_get_title() === 'Enable collaboration'): ?>
-                        Through collaboration, students, faculty and researchers develop deeper understandings of their subjects, evolve more effective and efficient ways to teach, and grow the knowledge base. 
+                        Through collaboration, students, faculty and researchers develop deeper understandings of their subjects, evolve more effective and efficient ways to teach, and grow the knowledge base.
                     <?php elseif (drupal_get_title() === 'Engage users'): ?>
                         Sakai OAE is designed and developed to achieve rewarding, resonant and vibrant experiences for users and implementers alike.
                     <?php elseif (drupal_get_title() === 'Embrace openness'): ?>
@@ -144,7 +144,7 @@
                     <?php elseif (drupal_get_title() === 'Drive re-use'): ?>
                         Reusing existing academic materials and entities enables people to learn, tutor and research more efficiently, and to produce richer, higher-quality work.
                     <?php elseif (drupal_get_title() === 'Inspire discovery'): ?>
-                        We all know the thrill of discovery. It’s the excitement of opening fresh vistas, disproving old orthodoxies and establishing new truths. It’s the human imperative driving academic enquiry. 
+                        We all know the thrill of discovery. It’s the excitement of opening fresh vistas, disproving old orthodoxies and establishing new truths. It’s the human imperative driving academic enquiry.
                     <?php endif;?>
                   </div>
                   <?php print drupal_get_title(); ?>
